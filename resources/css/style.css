@@ -4,6 +4,13 @@ html {
   font-size: 18px;
 }
 
+/* Site Container */
+
+.site-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* Logo & Name at Top */
 
 .logo {
@@ -28,10 +35,16 @@ html {
 .main-banner {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   text-transform: uppercase;
   height: 25rem;
+  width: 100%;
+}
+
+.banner-container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 9rem;
 }
 
 .main-banner-text {
@@ -59,12 +72,9 @@ html {
 
 .nav-bar {
   background-color: firebrick;
-  display: block;
-}
-
-#nav-item {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  display: flex;
 }
 
 /* Products */
@@ -72,17 +82,55 @@ html {
 .product-grid {
   display: flex;
   margin-top: 3rem;
+  width: 960px;
+  margin: 0 auto;
 }
 
-#product1, #product2, #product3 img {
+.product-container {
   border: 4px solid black;
+  width: 30%;
+  display: flex;
   height: 9rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-#product1, #product2, #product3 {
-  width: 30%;
+#product1 img {
+  width: 9rem;
+}
+
+#product2 img {
+  width: 9rem;
+}
+
+#product3 img {
+  width: 9rem;
+}
+
+
+#product1 p, #product2 p, #product3 p {
+  background-color: black;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Location & Hours */
+.location-hours {
+  margin-top: 3rem;
+  width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+#location, #hours {
+  padding-left: 2rem;
+  width: 35%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  display: inline-flex;
+  margin-bottom: 4rem;
 }
 
 /* Footer */
